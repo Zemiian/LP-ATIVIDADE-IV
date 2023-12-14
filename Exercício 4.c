@@ -13,7 +13,7 @@ struct contaBancaria Conta;
 
 struct contaBancaria depositar(struct contaBancaria conta, float valor){
 conta.saldo += valor;
- printf("\n Depósito de %.2f realizado",valor);
+ printf("\n DepÃ³sito de %.2f realizado",valor);
     return conta;
 }
 
@@ -36,7 +36,7 @@ printf("\n 1 - Depositar");
 printf("\n 2 - Sacar");
 printf("\n 3 - Saldo"); 
 printf("\n 4 - Sair");
-printf("\n Escolha uma opção: ");
+printf("\n Escolha uma opÃ§Ã£o: ");
 }
 
 int main(){
@@ -51,7 +51,7 @@ int main(){
     
 	switch(opcao){
         case 1:
-        printf("Digite o valor do depósito: ");
+        printf("Digite o valor do depÃ³sito: ");
         scanf("%f", &valor);
         Conta = depositar(Conta, valor);
         break;
@@ -67,11 +67,11 @@ break;
             break;
             
             case 4:
-            	printf("Opção inválida. Tente novamente\n");
+            	printf("OpÃ§Ã£o invÃ¡lida. Tente novamente\n");
             	break;
             	
             default:
-            printf("\n Opção inválida.");
+            printf("\n OpÃ§Ã£o invÃ¡lida.");
             break;
 };
 
